@@ -12,8 +12,12 @@ public class Presentador {
 
     public void levelSecurity(String password){
         validationModel.valuesLength(password);
-        validationModel.getTextoColor();
+    }
 
-
+    public String colorSecurity() {
+        return validationModel.getTextoColor();
+    }
+    public String colorValidation(){
+        return validationModel.getColor();
     }
 }
